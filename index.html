@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Odin Admin Dashboard</title>
 </head>
 <body>
@@ -11,108 +12,111 @@
     <div class="header">  
         <div class="header-top">
             <input type="text" placeholder="Search...">
+            <p>Username</p>
         </div>
-
         <div class="header-bottom">
             <div class="user-profile">
                 <p>Hi there,</p>
                 <p id="user-name">User Name (@handle)</p>
             </div>
-
             <div class="header-btns">
-                <button class="header-btn" id="header-new">New</button>
-                <button class="header-btn" id="header-upload">Upload</button>
-                <button class="header-btn" id="header-share">Share</button>
+                <button id="new">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
             </div>
         </div>
     </div>
 
     <div class="sidebar">
         <h2>Dashboard</h2>
-        
-        <div class="side-btn-top">
-            <button class="side-btn" id="side-home">Home</button>
-            <button class="side-btn" id="side-profile">Profile</button>
-            <button class="side-btn" id="side-messages">Messages</button>
-            <button class="side-btn" id="side-history">History</button>
-            <button class="side-btn" id="side-tasks">Tasks</button>
-            <button class="side-btn" id="side-communities">Communities</button>
+        <div class="top-links">
+            <p class="link" id="home">Home</p>
+            <p class="link" id="profile">Profile</p>
+            <p class="link" id="messages">Messages</p>
+            <p class="link" id="history">History</p>
+            <p class="link" id="tasks">Tasks</p>
+            <p class="link" id="communities">Communities</p>
         </div>
 
-        <div class="side-btn-bottom">
-            <button class="side-btn" id="side-settings">Settings</button>
-            <button class="side-btn" id="side-support">Support</button>
-            <button class="side-btn" id="side-privacy">Privacy</button>
+        <div class="bottom-links">
+            <p class="link" id="settings">Settings</p>
+            <p class="link" id="support">Support</p>
+            <p class="link" id="privacy">Privacy</p>
         </div>
     </div>
 
     <div class="main">
-        <div class="projects-container">
-            <div class="project">
-                <p class="project-title">Project 1</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="project">
-                <p class="project-title">Project 2</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="project">
-                <p class="project-title">Project 3</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="project">
-                <p class="project-title">Project 4</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </p>
-            </div>
-            <div class="project">
-                <p class="project-title">Project 5</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </p>
-            </div>
-            <div class="project">
-                <p class="project-title">Project 6</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </p>
-            </div>
-
-        </div>
-
-        <div class="announcements-container">
-            <div class="annnouncement">
-                <p class="announcement title">Site Maintenance</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-            <div class="annnouncement">
-                <p class="announcement title">Community Share Day</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-            <div class="annnouncement">
-                <p class="announcement title">Updated Privacy Policy</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <div class="left">
+            <h2>Your Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <p class="title">Project 1</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 2</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 3</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 4</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 5</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 6</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="trending-container">
-            <div class="trending-post">
-                <p class="trending-user">Username 1</p>
-                <p>Hi there</p>
+        
+        <div class="right">
+            <h3 class="main-top">Announcements</h3>
+            <div class="announcements-container">
+                <div class="announcement">
+                    <p class="title-small">Site Maintenance</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <div class="announcement">
+                    <p class="title-small">Community Share Day</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <div class="announcement">
+                    <p class="title-small">Updated Privacy Policy</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
             </div>
-            <div class="trending-post">
-                <p class="trending-user">Username 2</p>
-                <p>Hello</p>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="post">
+                    <p class="user">Username 1</p>
+                    <p>Hi there</p>
+                </div>
+                <div class="post">
+                    <p class="user">Username 2</p>
+                    <p>Hello</p>
+                </div>
+                <div class="post">
+                    <p class="user">Username 3</p>
+                    <p>What's Up</p>
+                </div>
+                <div class="post">
+                    <p class="user">Username 4</p>
+                    <p>Nothing much</p>
+                </div>
             </div>
-            <div class="trending-post">
-                <p class="trending-user">Username 3</p>
-                <p>What's Up</p> 
-            </div>
-            <div class="trending-post">
-                <p class="trending-user">Username 4</p>
-                <p>Nothing much</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
     
 </body>
 </html>
